@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<div class="container">
+    <h3>About Page</h3>
+        {% if logged_in_user %}
+            <p>Hello, {{logged_in_user}}</p>    
+        {% else %}
+            <p>Welcome New User</p>
+        {% endif %}
+
+        <p>Would you believe it... {% if info_to_display %} {{ info_to_display}} {% else%} hi {% endif%}</p>
+
+    </div>
+    
+{% endblock %}

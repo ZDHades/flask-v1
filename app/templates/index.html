@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h3>Home Page</h3>
+    <div class="container">
+        <ul class="list-group">
+            {% for user in users %}
+            <li class="list-group-item">{{ user}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {# issa comment #}
+{% endblock %}
